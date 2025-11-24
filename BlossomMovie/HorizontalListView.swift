@@ -14,26 +14,32 @@ struct HorizontalListView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(header)
-                .font(.title)
+                .font(.title2) // Titre un peu moins grand
+                .bold()
+                .padding(.leading, 20) // Aligner avec les autres paddings
+                .padding(.bottom, 5) // Petit espace sous le titre
             
-            ScrollView (.horizontal) {
-                LazyHStack {
+            ScrollView (.horizontal, showsIndicators: false) { // Cacher l'indicateur de défilement
+                LazyHStack(spacing: 15) { // Espacement entre les affiches
                     ForEach(titles, id:\.self) {title in
                         AsyncImage(url: URL(string: title)){image in
                             image
                                 .resizable()
-                                .scaledToFit()
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .scaledToFill() // Utiliser scaledToFill pour éviter les barres noires
+                                .frame(width: 120, height: 180) // Affiche plus fine
+                                .clipShape(RoundedRectangle(cornerRadius: 12)) // Coins plus arrondis
                         } placeholder: {
                             ProgressView()
+                                .frame(width: 120, height: 180)
                         }
-                        .frame(width: 120, height: 200)
                     }
                 }
+                .padding(.leading, 20) // Padding à gauche pour le premier élément
+                .padding(.trailing, 20) // Padding à droite pour le dernier élément
             }
+            .frame(height: 180) // Ajuster la hauteur à celle des images
         }
-        .frame(height: 250)
-        .padding(10)
+        .padding(.vertical, 10) // Espacement vertical entre les listes
     }
 }
 

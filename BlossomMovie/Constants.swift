@@ -9,20 +9,23 @@ import Foundation
 import SwiftUI
 
 struct Constants {
-    static let homeString = "Home"
-    static let upcomingString = "Upcoming"
-    static let searchString = "Search"
-    static let downloadString = "Download"
-    static let playString = "Play"
-    static let trendingMovieString = "Trending Movies"
-    static let trendingTVString = "Trending TV"
-    static let topRatedMovieString = "Top Rated Movies"
-    static let topRatedTVString = "Top Rated TV"
+    static let homeString = "Accueil"
+    static let upcomingString = "À venir"
+    static let searchString = "Rechercher"
+    static let favoriteString = "Favoris"
+    static let playString = "Regarder"
+    static let addFavoriteString = "Ajouter"
+    static let trendingMovieString = "Films tendance"
+    static let trendingTVString = "Séries tendance"
+    static let topRatedMovieString = "Films les mieux notés"
+    static let topRatedTVString = "Séries les mieux notées"
     
-    static let homeIconString = "house"
-    static let upcomingIconString = "play.circle"
+    static let backgroundColorString = "Background"
+    
+    static let homeIconString = "house.fill"
+    static let upcomingIconString = "play.circle.fill"
     static let searchIconString = "magnifyingglass"
-    static let downloadIconString = "arrow.down.to.line"
+    static let favoriteIconString = "star.fill"
     
     static let testTitleURL = "https://image.tmdb.org/t/p/w500/nnl6OWkyPpuMm595hmAxNW3rZFn.jpg"
     static let testTitleURL2 = "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg"
