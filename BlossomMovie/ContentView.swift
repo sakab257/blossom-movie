@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  BlossomMovie
 //
-//  Created by Carlos Valentin on 11/7/24.
+//  Created by Salim on 24/11/2025.
 //
 
 import SwiftUI
@@ -25,6 +25,10 @@ struct ContentView: View {
             Tab(Constants.favoriteString, systemImage: Constants.favoriteIconString) {
                 Text(Constants.favoriteString)
             }
+        }
+        .onAppear{
+            print(APIConfig.shared.tmdbBaseURL)
+            print(APIConfig.shared.tmdbAPIKey)
         }
     }
 }

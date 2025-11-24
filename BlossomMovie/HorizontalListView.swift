@@ -2,7 +2,7 @@
 //  HorizontalListView.swift
 //  BlossomMovie
 //
-//  Created by Carlos Valentin on 12/6/24.
+//  Created by Salim on 24/11/2025.
 //
 
 import SwiftUI

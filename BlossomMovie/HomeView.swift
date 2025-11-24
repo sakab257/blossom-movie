@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  BlossomMovie
 //
-//  Created by Carlos Valentin on 11/22/24.
+//  Created by Salim on 24/11/2025.
 //
 
 import SwiftUI
